@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazenX AI - Build Faster. Think Smarter.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black bg-gradient-to-r from-accentBlue to-accentPurple bg-clip-text text-transparent tracking-wider">RazenX AI</span>
+                <span class="text-xs font-semibold px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-accentBlue">v1.0</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#fitur" class="hover:text-white transition">Fitur Utama</a>
+                <a href="#kemampuan" class="hover:text-white transition">Kemampuan</a>
+                <a href="#harga" class="hover:text-white transition">Tingkatan Layanan</a>
+            </div>
+            <a href="#harga" class="hidden md:inline-block px-5 py-2 bg-gradient-to-r from-accentBlue to-accentPurple rounded-lg text-sm font-bold shadow-lg shadow-accentBlue/20 hover:opacity-90 transition">Mulai Sekarang</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+        <!-- Glow Effect Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accentBlue/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-accentPurple/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
+                Build Faster.<br>
+                <span class="bg-gradient-to-r from-accentBlue via-purple-400 to-accentPurple bg-clip-text text-transparent">Think Smarter.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Asisten AI modern generasi terbaru yang dirancang khusus untuk mempercepat pemrograman, pengembangan aplikasi, desain sistem, hingga analisis data Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kemampuan" class="px-8 py-4 bg-gradient-to-r from-accentBlue to-accentPurple rounded-xl font-bold shadow-xl shadow-accentBlue/30 hover:scale-[1.02] transition duration-200">Coba Demo Gratis</a>
+                <a href="#harga" class="px-8 py-4 bg-slate-800 border border-slate-700 hover:border-slate-600 rounded-xl font-bold hover:bg-slate-750 transition duration-200">Lihat Paket Pro & VIP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEMAMPUAN UTAMA SECTION -->
+    <section id="kemampuan" class="py-24 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight mb-4">Kemampuan Inti RazenX AI</h2>
+                <p class="text-slate-400">Dari arsitektur backend yang kompleks hingga antarmuka pengguna yang responsif, RazenX siap mengeksekusi kode Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-6 bg-darkCard border border-slate-800 rounded-2xl hover:border-slate-700 transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-accentBlue/10 rounded-xl text-accentBlue mb-6 text-xl font-bold">📱</div>
+                    <h3 class="text-xl font-bold mb-2">Pengembangan Mobile</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pembuatan aplikasi Android native maupun lintas platform menggunakan Kotlin, Java, dan Flutter.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 bg-darkCard border border-slate-800 rounded-2xl hover:border-slate-700 transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-accentPurple/10 rounded-xl text-accentPurple mb-6 text-xl font-bold">🌐</div>
+                    <h3 class="text-xl font-bold mb-2">Website Modern</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Implementasi UI/UX premium yang responsif dengan React, Next.js, Tailwind CSS, dan JavaScript murni.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 bg-darkCard border border-slate-800 rounded-2xl hover:border-slate-700 transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-green-500/10 rounded-xl text-green-400 mb-6 text-xl font-bold">⚙️</div>
+                    <h3 class="text-xl font-bold mb-2">Backend & REST API</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Arsitektur server tangguh berbasis Node.js, Express, FastAPI, Laravel, serta desain database relasional & NoSQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TINGKATAN LAYANAN (PRICING) -->
+    <section id="harga" class="py-24 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight mb-4">Pilih Tingkatan Pengguna Anda</h2>
+                <p class="text-slate-400">Sesuaikan kapasitas AI dengan skala proyek dan kebutuhan pengembangan perangkat lunak Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Free Plan -->
+                <div class="p-8 bg-darkCard/50 border border-slate-800 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Free</h3>
+                        <p class="text-slate-400 text-sm mb-6">Cocok untuk eksplorasi awal dan proyek dasar harian.</p>
+                        <div class="text-3xl font-black mb-6">Rp 0 <span class="text-sm font-normal text-slate-500">/selamanya</span></div>
+                        <ul class="space-y-4 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                            <li class="flex items-center">✅ Respon cepat & interaktif</li>
+                            <li class="flex items-center">✅ Pembuatan blueprint / proyek dasar</li>
+                            <li class="flex items-center">✅ Penjelasan konsep singkat</li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full py-3 bg-slate-800 hover:bg-slate-700 transition rounded-xl font-bold text-sm">Gunakan Sekarang</button>
+                </div>
+
+                <!-- Pro Plan (Kategori Unggulan) -->
+                <div class="p-8 bg-darkCard border-2 border-accentBlue rounded-3xl flex flex-col justify-between relative shadow-xl shadow-accentBlue/5">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-accentBlue rounded-full text-xs font-bold uppercase tracking-wider">Paling Populer</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-accentBlue">Pro</h3>
+                        <p class="text-slate-400 text-sm mb-6">Untuk developer profesional yang butuh optimasi performa tinggi.</p>
+                        <div class="text-3xl font-black mb-6">Rp 149.000 <span class="text-sm font-normal text-slate-500">/bulan</span></div>
+                        <ul class="space-y-4 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                            <li class="flex items-center">✅ Proyek kode lebih kompleks</li>
+                            <li class="flex items-center">✅ Debugging & Optimasi Performa</li>
+                            <li class="flex items-center">✅ Penjelasan mendalam & studi kasus</li>
+                            <li class="flex items-center">✅ Dukungan framework lebih luas</li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full py-3 bg-accentBlue hover:opacity-90 transition rounded-xl font-bold text-sm shadow-lg shadow-accentBlue/20">Langganan Pro</button>
+                </div>
+
+                <!-- VIP Plan -->
+                <div class="p-8 bg-darkCard/50 border border-slate-800 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-accentPurple">VIP</h3>
+                        <p class="text-slate-400 text-sm mb-6">Skala enterprise dengan arsitektur tingkat lanjut.</p>
+                        <div class="text-3xl font-black mb-6">Rp 499.000 <span class="text-sm font-normal text-slate-500">/bulan</span></div>
+                        <ul class="space-y-4 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                            <li class="flex items-center">✅ Arsitektur sistem tingkat lanjut (Advanced)</li>
